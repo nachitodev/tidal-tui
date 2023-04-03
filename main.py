@@ -1,8 +1,10 @@
 import tidalapi, json, warnings, subprocess, os, sys
+
 def clear():
     os.system("clear")
 warnings.filterwarnings(action="ignore", message="unclosed", category=ResourceWarning)
 session = tidalapi.Session()
+
 def login(session):
     clear() 
     session.login_oauth_simple()
@@ -70,3 +72,4 @@ try:
     menu(session)
 except FileNotFoundError:
     pass
+    login(session)
