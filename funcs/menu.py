@@ -6,5 +6,5 @@ def main_menu():
         select()
     except IndexError:
         pass
-    #except KeyboardInterrupt:
-    #    sys.exit()
+    except KeyboardInterrupt:
+        sys.exit()

@@ -24,8 +24,9 @@ except FileNotFoundError:
     login()
 
 except JSONDecodeError:
-    settings_data = {"autoplay": False}
-    
-    with open(f'{home}/.tidal-tui/settings.json', 'w',) as w:
-        json.dump(settings_data, w)
-    w.close()
+    #settings_data = {"autoplay": False}
+    #
+    #with open(f'{home}/.tidal-tui/settings.json', 'w',) as w:
+    #    json.dump(settings_data, w)
+    #w.close()
+    pass
