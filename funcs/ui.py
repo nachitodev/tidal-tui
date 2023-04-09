@@ -7,11 +7,10 @@ class main(App):
         yield DataTable()
     
     def on_mount(self):
-        from funcs.select import ROWS
+        from funcs.select import ROWS        
         table = self.query_one(DataTable)
         rows = iter(ROWS)
         table.add_columns(*next(rows))
-        table.add_rows(rows)
-    
+        table.add_rows(rows)  
 global app
 app = main()

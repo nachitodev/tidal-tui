@@ -39,18 +39,5 @@ def select_track(playlists, playlist_id, settings_str):
         
         rows_data = (duration, name, artist_name)
         ROWS.append(rows_data)
-        #print(f"{x+1} - {tracks[x].name}")
+
     app.run()
-        
-    #print("0 - Return to Playlist Select")
-    #print(f"\n[{settings_str}] - Autoplay \n")
-    
-    #track= int(input("Select Track: "))
-    
-    #if track == 0:
-        #from funcs.menu import main_menu
-        #print(track)
-        #select()
-    #else:
-        #from funcs.music import music 
-        #music(tracks, track-1)
